@@ -4,7 +4,7 @@ export type TitleProps = {
 
 const Title = ({ children }: TitleProps) => {
   return (
-    <h1>{children}</h1>
+    <h1 className="text-3xl">{children}</h1>
   );
 };
 
