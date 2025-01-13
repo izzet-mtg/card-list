@@ -1,7 +1,12 @@
 import Tag from '@/components/tag';
 
 const VigilanceKeyword = () => (
-  <Tag>Vigilance</Tag>
+  <Tag
+    textColor='text-white'
+    backgroundColor='bg-orange-600'
+  >
+    Vigilance
+  </Tag>
 );
 
 export default VigilanceKeyword;
