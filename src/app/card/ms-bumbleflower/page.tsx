@@ -5,6 +5,7 @@ const MsBumbleflower = () => (
   <main>
     <NormalCard
       title='Ms. Bumbleflower'
+      cardImageSource='https://mtg-jp.com//img_sys/cardImages/BLC/670858/cardimage.png'
       keywords={[
       <VigilanceKeyword key="vigilance" />
       ]}
