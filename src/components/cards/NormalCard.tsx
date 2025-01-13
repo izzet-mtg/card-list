@@ -1,5 +1,5 @@
 import * as react from 'react';
-import Title from '@/components/title';
+import Title from '@/components/Title';
 
 export type NormalCardProps = {
   title: string;

@@ -1,5 +1,5 @@
-import VigilanceKeyword from '@/components/keywords/vigilance';
-import NormalCard from '@/components/cards/normal';
+import VigilanceKeyword from '@/components/keywords/VigilanceKeyword';
+import NormalCard from '@/components/cards/NormalCard';
 
 const MsBumbleflower = () => (
   <main>
