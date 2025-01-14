@@ -33,11 +33,12 @@ export default function RootLayout({
         <footer className="bg-indigo-950">
           <div className="w-full p-4 mx-auto text-sm text-center">
             <p>
-              This site is unofficial Fan Content permitted under the Fan Content Policy.
-              Not approved/endorsed by Wizards.
+              本サイトはファンコンテンツポリシーに基づき許可された非公式ファンコンテンツです。ウィザーズ社の承認や推薦を受けたものではありません。
             </p>
-            <p></p>
-             Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+            <p>
+              使用されている素材の一部はウィザーズ・オブ・ザ・コーストの所有物です。
+              ©Wizards of the Coast LLC.
+            </p>
           </div>
         </footer>
       </body>
