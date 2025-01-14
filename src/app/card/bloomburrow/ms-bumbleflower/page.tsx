@@ -10,7 +10,7 @@ import BlueManaSymbol from '@/components/mana-symbols/colored/BlueManaSymbol';
 import GenericMana1Symbol from '@/components/mana-symbols/colorless/GenericMana1';
 
 const MsBumbleflower = () => (
-  <main>
+  <main className='min-h-screen'>
     <NormalCard
       title='バンブルフラワー夫人'
       cardImageSource='https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794'
