@@ -1,4 +1,4 @@
-import ManaSymbol from '@/components/ManaSymbol';
+import ManaSymbol from '@/components/mana-symbols/ManaSymbol';
 
 const BlackManaSymbol = () => (
   <ManaSymbol
