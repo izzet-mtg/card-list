@@ -29,6 +29,7 @@ export type NormalCardProps = {
   rarity: rarity.Rarity;
   abilities?: string[];
   stats?: Record<"power" | "toughness", number | string>;
+  mana?: react.ReactNode[];
 };
 const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, rarity, stats, abilities, mana }: NormalCardProps) => (
   <div className='space-y-6'>
@@ -38,7 +39,16 @@ const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, ra
       <dl className='max-h-0 border-spacing-x-7 border-spacing-y-1 divide-y divide-gray-200 dark:text-white dark:divide-gray-700'>
         <CardContentItem title='Rarity'>
           {rarity === 'common' && "Common" || rarity === 'mythic' && "Mythic" || rarity === 'rare' && 'Rare' || rarity === 'uncommon' && 'Uncommon'}
-        </CardContentRow>
+        </CardContentItem>
+        {(mana ?? []).length > 0 && (
+          <CardContentItem title='Mana'>
+            <div className='flex space-x-1'>
+              {mana?.map((mana, index) => (
+                <div key={`mana-${index}`} className='w-9'>{mana}</div>
+              ))}
+            </div>
+          </CardContentItem>
+        )}
         {supertypes.length > 0 && (
           <CardContentItem title='Supertypes'>
             <TagList>
