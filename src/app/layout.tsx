@@ -30,7 +30,7 @@ export default function RootLayout({
         <div className="flex-1">
           {children}
         </div>
-        <footer className="bg-indigo-950">
+        <footer className="bg-indigo-950 text-white">
           <div className="w-full p-4 mx-auto text-sm text-center">
             <p>
               本サイトはファンコンテンツポリシーに基づき許可された非公式ファンコンテンツです。ウィザーズ社の承認や推薦を受けたものではありません。
