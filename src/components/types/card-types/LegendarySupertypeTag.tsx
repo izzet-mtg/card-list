@@ -1,12 +1,12 @@
 import Tag from '@/components/Tag';
 
-const CreatureSupertype = () => (
+const LegendarySupertype = () => (
   <Tag
     textColor='text-white'
     backgroundColor='bg-orange-600'
   >
-    Creature
+    伝説の
   </Tag>
 );
 
-export default CreatureSupertype;
+export default LegendarySupertype;

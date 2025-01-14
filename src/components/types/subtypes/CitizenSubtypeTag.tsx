@@ -5,7 +5,7 @@ const CitizenSubtype = () => (
     textColor='text-white'
     backgroundColor='bg-orange-600'
   >
-    Citizen
+    市民
   </Tag>
 );
 

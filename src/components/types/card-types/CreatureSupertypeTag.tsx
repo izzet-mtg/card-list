@@ -1,12 +1,12 @@
 import Tag from '@/components/Tag';
 
-const RabbitSubtype = () => (
+const CreatureSupertype = () => (
   <Tag
     textColor='text-white'
     backgroundColor='bg-orange-600'
   >
-    Rabbit
+    クリーチャー
   </Tag>
 );
 
-export default RabbitSubtype;
+export default CreatureSupertype;
