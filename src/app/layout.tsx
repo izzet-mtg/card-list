@@ -23,11 +23,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-full flex flex-col`}
       >
-        {children}
+        <div className="flex-1">
+          {children}
+        </div>
+        <footer className="bg-indigo-950">
+          <div className="w-full p-4 mx-auto text-sm text-center">
+            <p>
+              This site is unofficial Fan Content permitted under the Fan Content Policy.
+              Not approved/endorsed by Wizards.
+            </p>
+            <p></p>
+             Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+          </div>
+        </footer>
       </body>
     </html>
   );
