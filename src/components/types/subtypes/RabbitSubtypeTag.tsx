@@ -2,8 +2,8 @@ import Tag from '@/components/Tag';
 
 const RabbitSubtype = () => (
   <Tag
-    textColor='text-white'
-    backgroundColor='bg-orange-600'
+    textColor='text-black'
+    backgroundColor='bg-amber-300'
   >
     兎
   </Tag>
