@@ -1,6 +1,6 @@
 import * as react from 'react';
 import Title from '@/components/Title';
-import * as rarity from '@/features/rarity';
+import * as rarity from '@/lib/rarity';
 import AbilityList from '../abilities/AbilityList';
 import AbilityListItem from '../abilities/AbilityListItem';
 
@@ -37,11 +37,11 @@ const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, ra
     <div className='flex space-x-5'>
       <img src={cardImageSource} alt='card image' className='max-h-96' />
       <dl className='max-h-0 border-spacing-x-7 border-spacing-y-1 divide-y divide-gray-200 dark:text-white dark:divide-gray-700'>
-        <CardContentItem title='Rarity'>
+        <CardContentItem title='レアリティ'>
           {rarity === 'common' && "Common" || rarity === 'mythic' && "Mythic" || rarity === 'rare' && 'Rare' || rarity === 'uncommon' && 'Uncommon'}
         </CardContentItem>
         {(mana ?? []).length > 0 && (
-          <CardContentItem title='Mana'>
+          <CardContentItem title='マナ'>
             <div className='flex space-x-1'>
               {mana?.map((mana, index) => (
                 <div key={`mana-${index}`} className='w-9'>{mana}</div>
@@ -50,33 +50,33 @@ const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, ra
           </CardContentItem>
         )}
         {supertypes.length > 0 && (
-          <CardContentItem title='Supertypes'>
+          <CardContentItem title='カード・タイプ'>
             <TagList>
               {supertypes}
             </TagList>
           </CardContentItem>
         )}
         {(subtypes ?? []).length > 0 && (
-          <CardContentItem title='Subtypes'>
+          <CardContentItem title='サブタイプ'>
             <TagList>
               {subtypes}
             </TagList>
           </CardContentItem>
         )}
         {(keywords ?? []).length > 0 && (
-          <CardContentItem title='Keywords'>
+          <CardContentItem title='キーワード能力'>
             <TagList>
               {keywords}
             </TagList>
           </CardContentItem>
         )}
         {typeof stats !== 'undefined' && (
-          <CardContentItem title='Stats'>
+          <CardContentItem title='スタッツ'>
             {stats.power}/{stats.toughness}
           </CardContentItem>
         )}
         {(abilities ?? []).length > 0 && (
-          <CardContentItem title="Abilities">
+          <CardContentItem title="能力">
             <AbilityList>
               {(abilities ?? []).map((ability, index) => (
                 <AbilityListItem key={`ability-${index}`}>

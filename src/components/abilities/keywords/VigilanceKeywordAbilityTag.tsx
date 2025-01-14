@@ -5,7 +5,7 @@ const VigilanceKeyword = () => (
     textColor='text-white'
     backgroundColor='bg-orange-600'
   >
-    Vigilance
+    警戒
   </Tag>
 );
 
