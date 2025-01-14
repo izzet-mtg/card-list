@@ -26,19 +26,19 @@ export type NormalCardProps = {
   cardImageSource: string;
   supertypes: react.ReactNode[];
   subtypes?: react.ReactNode[];
-  rarity: rarity.Rarity;
+  cardRarity: rarity.Rarity;
   abilities?: string[];
   stats?: Record<"power" | "toughness", number | string>;
   mana?: react.ReactNode[];
 };
-const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, rarity, stats, abilities, mana }: NormalCardProps) => (
+const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, cardRarity, stats, abilities, mana }: NormalCardProps) => (
   <div className='space-y-6'>
     <Title>{title}</Title>
     <div className='flex space-x-5'>
       <img src={cardImageSource} alt='card image' className='max-h-96' />
       <dl className='max-h-0 border-spacing-x-7 border-spacing-y-1 divide-y divide-gray-200 dark:text-white dark:divide-gray-700'>
         <CardContentItem title='レアリティ'>
-          {rarity === 'common' && "Common" || rarity === 'mythic' && "Mythic" || rarity === 'rare' && 'Rare' || rarity === 'uncommon' && 'Uncommon'}
+          {rarity.toHumanReadable(cardRarity)}
         </CardContentItem>
         {(mana ?? []).length > 0 && (
           <CardContentItem title='マナ'>

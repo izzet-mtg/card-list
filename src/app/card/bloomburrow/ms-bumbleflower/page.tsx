@@ -25,7 +25,7 @@ const MsBumbleflower = () => (
         <RabbitSubtypeTag key="rabbit" />,
         <CitizenSubtypeTag key="citizen" />,
       ]}
-      rarity='mythic'
+      cardRarity='mythic'
       abilities={[
         "test1",
         "test2"
