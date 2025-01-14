@@ -10,7 +10,7 @@ export type NormalCardProps = {
 const NormalCard = ({ title, keywords, cardImageSource }: NormalCardProps) => (
   <div>
     <Title>{title}</Title>
-    <img src={cardImageSource} />
+    <img src={cardImageSource} alt='card image' />
     {(keywords ?? []).length > 0 && (
       <div>
         {keywords}
