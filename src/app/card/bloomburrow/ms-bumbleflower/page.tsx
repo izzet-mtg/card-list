@@ -22,10 +22,12 @@ const MsBumbleflower = () => (
         <CitizenSubtypeTag key="citizen" />,
       ]}
       rarity='mythic'
-    >
-      test1
-      test2
-    </NormalCard>
+      abilities={[
+        "test1",
+        "test2"
+      ]}
+      stats={{ power: 1, toughness: 5}}
+    />
   </main>
 );
 

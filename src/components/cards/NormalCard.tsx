@@ -1,6 +1,8 @@
 import * as react from 'react';
 import Title from '@/components/Title';
 import * as rarity from '@/features/rarity';
+import AbilityList from '../abilities/AbilityList';
+import AbilityListItem from '../abilities/AbilityListItem';
 
 type CardContentProps = react.PropsWithChildren<{
   title: string;
@@ -20,15 +22,17 @@ const TagList = ({ children }: react.PropsWithChildren<{}>) => (
   </div>
 );
 
-export type NormalCardProps = react.PropsWithChildren<{
+export type NormalCardProps = {
   title: string;
   keywords?: react.ReactNode[];
   cardImageSource: string;
   supertypes: react.ReactNode[];
   subtypes?: react.ReactNode[];
   rarity: rarity.Rarity;
-}>;
-const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, rarity, children }: NormalCardProps) => (
+  abilities?: string[];
+  stats?: Record<"power" | "toughness", number | string>;
+};
+const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, rarity, stats, abilities }: NormalCardProps) => (
   <div className='space-y-6'>
     <Title>{title}</Title>
     <div className='flex space-x-28'>
@@ -58,7 +62,22 @@ const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, ra
             </TagList>
           </CardContentItem>
         )}
-        {children}
+        {typeof stats !== 'undefined' && (
+          <CardContentItem title='Stats'>
+            {stats.power}/{stats.toughness}
+          </CardContentItem>
+        )}
+        {(abilities ?? []).length > 0 && (
+          <CardContentItem title="Abilities">
+            <AbilityList>
+              {(abilities ?? []).map((ability, index) => (
+                <AbilityListItem key={`ability-${index}`}>
+                  {ability}
+                </AbilityListItem>
+              ))}
+            </AbilityList>
+          </CardContentItem>
+        )}
       </div>
     </div>
   </div>
