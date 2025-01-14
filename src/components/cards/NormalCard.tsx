@@ -9,7 +9,7 @@ type CardContentProps = react.PropsWithChildren<{
 }>;
 const CardContentItem = ({ title, children }: CardContentProps) => (
   <div className='flex space-x-14 align-middle'>
-    <h1>{title}</h1>
+    <h1 className='font-semibold'>{title}</h1>
     <div>
       {children}
     </div>
