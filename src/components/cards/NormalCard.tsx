@@ -23,13 +23,13 @@ const NormalCard = ({ title, keywords, cardImageSource }: NormalCardProps) => (
     <div className='flex space-x-28'>
       <img src={cardImageSource} alt='card image' />
       <div>
-        <CardContentItem title='Keyword'>
-          {(keywords ?? []).length > 0 && (
+        {(keywords ?? []).length > 0 && (
+          <CardContentItem title='Keyword'>
             <div>
               {keywords}
             </div>
-          )}
-        </CardContentItem>
+          </CardContentItem>
+        )}
       </div>
     </div>
   </div>
