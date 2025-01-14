@@ -9,7 +9,7 @@ const MsBumbleflower = () => (
   <main>
     <NormalCard
       title='Ms. Bumbleflower'
-      cardImageSource='https://mtg-jp.com//img_sys/cardImages/BLC/670858/cardimage.png'
+      cardImageSource='https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794'
       keywords={[
         <VigilanceKeywordAbilityTag key="vigilance" />
       ]}
