@@ -35,7 +35,7 @@ const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, ca
   <div className='space-y-6 max-w-screen-2xl mx-[max(20vw,20px)] my-14'>
     <Title>{title}</Title>
     <div className='flex space-x-5 flex-col md:flex-row'>
-      <img src={cardImageSource} alt='card image' className='max-h-96' />
+      <img src={cardImageSource} alt='card image' className='max-h-96 rounded' />
       <dl className='border-spacing-x-7 border-spacing-y-1 divide-y divide-gray-200 dark:text-white dark:divide-gray-700'>
         <CardContentItem title='レアリティ'>
           {rarity.toHumanReadable(cardRarity)}
