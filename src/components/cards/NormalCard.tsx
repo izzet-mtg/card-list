@@ -35,7 +35,7 @@ export type NormalCardProps = {
 const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, rarity, stats, abilities }: NormalCardProps) => (
   <div className='space-y-6'>
     <Title>{title}</Title>
-    <div className='flex space-x-10'>
+    <div className='flex space-x-5'>
       <img src={cardImageSource} alt='card image' className='max-h-96' />
       <dl className='table max-h-0 border-spacing-x-7 border-spacing-y-2'>
         <CardContentRow title='Rarity'>
