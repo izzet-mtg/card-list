@@ -1,4 +1,4 @@
-import VigilanceKeywordAbilityTag from '@/components/keyword-abilities/VigilanceKeywordAbilityTag';
+import VigilanceKeywordAbilityTag from '@/components/abilities/keywords/VigilanceKeywordAbilityTag';
 import NormalCard from '@/components/cards/NormalCard';
 import CitizenSubtypeTag from '@/components/card-types/subtypes/CitizenSubtypeTag';
 import RabbitSubtypeTag from '@/components/card-types/subtypes/RabbitSubtypeTag';
