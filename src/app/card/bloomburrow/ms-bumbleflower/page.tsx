@@ -1,9 +1,9 @@
-import VigilanceKeywordAbility from '@/components/keyword-abilities/VigilanceKeywordAbility';
+import VigilanceKeywordAbilityTag from '@/components/keyword-abilities/VigilanceKeywordAbilityTag';
 import NormalCard from '@/components/cards/NormalCard';
-import CitizenSubtype from '@/components/card-types/subtypes/CitizenSubtype';
-import RabbitSubtype from '@/components/card-types/subtypes/RabbitSubtype';
-import CreatureSupertype from '@/components/card-types/supertypes/CreatureSupertype';
-import LegendarySupertype from '@/components/card-types/supertypes/LegendarySupertype';
+import CitizenSubtypeTag from '@/components/card-types/subtypes/CitizenSubtypeTag';
+import RabbitSubtypeTag from '@/components/card-types/subtypes/RabbitSubtypeTag';
+import CreatureSupertypeTag from '@/components/card-types/supertypes/CreatureSupertypeTag';
+import LegendarySupertypeTag from '@/components/card-types/supertypes/LegendarySupertypeTag';
 
 const MsBumbleflower = () => (
   <main>
@@ -11,15 +11,15 @@ const MsBumbleflower = () => (
       title='Ms. Bumbleflower'
       cardImageSource='https://mtg-jp.com//img_sys/cardImages/BLC/670858/cardimage.png'
       keywords={[
-        <VigilanceKeywordAbility key="vigilance" />
+        <VigilanceKeywordAbilityTag key="vigilance" />
       ]}
       supertypes={[
-        <LegendarySupertype key="legendary" />,
-        <CreatureSupertype key="creature" />,
+        <LegendarySupertypeTag key="legendary" />,
+        <CreatureSupertypeTag key="creature" />,
       ]}
       subtypes={[
-        <RabbitSubtype key="rabbit" />,
-        <CitizenSubtype key="citizen" />,
+        <RabbitSubtypeTag key="rabbit" />,
+        <CitizenSubtypeTag key="citizen" />,
       ]}
       rarity='mythic'
     >
