@@ -1,4 +1,4 @@
-import VigilanceKeyword from '@/components/keywords/VigilanceKeyword';
+import VigilanceKeywordAbility from '@/components/keyword-abilities/VigilanceKeywordAbility';
 import NormalCard from '@/components/cards/NormalCard';
 import CitizenSubtype from '@/components/card-types/subtypes/CitizenSubtype';
 import RabbitSubtype from '@/components/card-types/subtypes/RabbitSubtype';
@@ -11,7 +11,7 @@ const MsBumbleflower = () => (
       title='Ms. Bumbleflower'
       cardImageSource='https://mtg-jp.com//img_sys/cardImages/BLC/670858/cardimage.png'
       keywords={[
-        <VigilanceKeyword key="vigilance" />
+        <VigilanceKeywordAbility key="vigilance" />
       ]}
       supertypes={[
         <LegendarySupertype key="legendary" />,
