@@ -32,7 +32,7 @@ export type NormalCardProps = {
   mana?: react.ReactNode[];
 };
 const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, cardRarity, stats, abilities, mana }: NormalCardProps) => (
-  <div className='space-y-6 max-w-screen-2xl mx-[max(20vw,20px)] my-14'>
+  <div className='space-y-6'>
     <Title>{title}</Title>
     <div className='flex space-x-5 flex-col md:flex-row'>
       <img src={cardImageSource} alt='card image' className='max-h-96 rounded' />
