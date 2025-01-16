@@ -14,7 +14,7 @@ const CardContentItem = ({ title, children }: CardContentProps) => (
   </div>
 );
 
-const TagList = ({ children }: react.PropsWithChildren<{}>) => (
+const TagList = ({ children }: react.PropsWithChildren) => (
   <div className='flex space-x-2'>
     {children}
   </div>
