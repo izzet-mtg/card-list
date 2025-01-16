@@ -1,5 +1,5 @@
 import * as react from 'react';
-import Title from '@/components/Title';
+import Title from '@/components/CardTitle';
 import * as rarity from '@/lib/rarity';
 import AbilityList from '../abilities/AbilityList';
 import AbilityListItem from '../abilities/AbilityListItem';
@@ -32,7 +32,8 @@ export type NormalCardProps = {
   mana?: react.ReactNode[];
 };
 const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, cardRarity, stats, abilities, mana }: NormalCardProps) => (
-  <div className='space-y-6'>
+  <div className='flex justify-center'>
+    <div className='max-w-6xl'>
     <Title>{title}</Title>
     <div className='flex space-x-5 flex-col md:flex-row'>
       <img src={cardImageSource} alt='card image' className='max-h-96 rounded' />
@@ -87,6 +88,7 @@ const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, ca
           </CardContentItem>
         )}
       </dl>
+    </div>
     </div>
   </div>
 );
