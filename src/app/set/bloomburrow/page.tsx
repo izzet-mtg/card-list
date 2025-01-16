@@ -6,35 +6,35 @@ const BloomBurrow = () => (
     <CardPreviewGrid>
       <CardPreview
         imageUrl="https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794"
-        href="/card/bloomburrow/ms-bumbleflower"
+        href="/set/bloomburrow/ms-bumbleflower"
       />
       <CardPreview
         imageUrl="https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794"
-        href="/card/bloomburrow/ms-bumbleflower"
+        href="/set/bloomburrow/ms-bumbleflower"
       />
       <CardPreview
         imageUrl="https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794"
-        href="/card/bloomburrow/ms-bumbleflower"
+        href="/set/bloomburrow/ms-bumbleflower"
       />
       <CardPreview
         imageUrl="https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794"
-        href="/card/bloomburrow/ms-bumbleflower"
+        href="/set/bloomburrow/ms-bumbleflower"
       />
       <CardPreview
         imageUrl="https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794"
-        href="/card/bloomburrow/ms-bumbleflower"
+        href="/set/bloomburrow/ms-bumbleflower"
       />
       <CardPreview
         imageUrl="https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794"
-        href="/card/bloomburrow/ms-bumbleflower"
+        href="/set/bloomburrow/ms-bumbleflower"
       />
       <CardPreview
         imageUrl="https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794"
-        href="/card/bloomburrow/ms-bumbleflower"
+        href="/set/bloomburrow/ms-bumbleflower"
       />
       <CardPreview
         imageUrl="https://cards.scryfall.io/large/front/6/e/6e15124e-ad7b-49f5-b60e-c68029482d06.jpg?1730180794"
-        href="/card/bloomburrow/ms-bumbleflower"
+        href="/set/bloomburrow/ms-bumbleflower"
       />
     </CardPreviewGrid>
   </main>
