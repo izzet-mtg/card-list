@@ -44,7 +44,7 @@ const NormalCard = ({ title, keywords, cardImageSource, supertypes, subtypes, ca
           <CardContentItem title='マナ'>
             <div className='flex space-x-1'>
               {mana?.map((mana, index) => (
-                <div key={`mana-${index}`} className='w-9'>{mana}</div>
+                <div key={`mana-${index}`} className='w-7 xl:w-9'>{mana}</div>
               ))}
             </div>
           </CardContentItem>
