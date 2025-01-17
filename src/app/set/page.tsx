@@ -1,3 +1,4 @@
+import GridTitle from '@/components/GridTitle';
 import * as react from 'react';
 
 type SetPreviewProps = {
@@ -27,6 +28,7 @@ const SetPreviewGrid = ({ children }: SetPreviewGridProps) => (
 
 const Set = () => (
   <main>
+    <GridTitle>カードセット</GridTitle>
     <SetPreviewGrid>
       <SetPreview icon={<i className='ss ss-blb'/>} name='Bloomburrow' href='/set/bloomburrow' />
       <SetPreview icon={<i className='ss ss-blb'/>} name='Bloomburrow' href='/set/bloomburrow' />
