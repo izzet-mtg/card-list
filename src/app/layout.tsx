@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className="h-full">
+      <head>
+        <link href="//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.css" rel="stylesheet" type="text/css" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-full flex flex-col`}
       >
